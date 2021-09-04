@@ -42,7 +42,7 @@ function Navbar() {
 	return (
 		<nav
 			ref={navRef}
-			className="w-full pl-3 pr-2 md:px-14 py-2 flex flex-col md:flex-row md:items-center md:justify-between uppercase bg-white z-10 fixed top-0"
+			className="w-full pl-3 pr-2 md:px-14 py-2 flex flex-col md:flex-row md:items-center justify-center md:justify-between uppercase bg-white z-10 fixed top-0"
 		>
 			<div className="p-2 flex justify-between">
 				<div className="font-bold">Brainstorm</div>
