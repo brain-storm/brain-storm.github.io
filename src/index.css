@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+	scroll-behavior: smooth;
+}
+
 .project-card:hover .overlay {
 	background-color: gray;
 	opacity: 0.5;

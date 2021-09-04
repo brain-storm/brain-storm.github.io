@@ -20,7 +20,7 @@ function Experience() {
 		<section id="experience" className="p-4 flex justify-center">
 			<div className="max-w-5xl w-full flex flex-col items-center">
 				<div className="text-center">
-					<h2 className="text-2xl uppercase font-bold">Experience</h2>
+					<h2 className="text-2xl uppercase font-bold text-teal-900">Experience</h2>
 					<p className="m-auto py-2">
 						I've been doing web development for about 3 years now,
 						and I'm always eager to learn more in this fast paced
@@ -33,84 +33,84 @@ function Experience() {
 					</h3>
 					<div className="flex flex-wrap items-center justify-center">
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={html}
 							alt="HTML"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={css}
 							alt="CSS"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={angular}
 							alt="Angular"
 						/>
 
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={react}
 							alt="React"
 						/>
 
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={node}
 							alt="Node"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={mongodb}
 							alt="Mongodb"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={js}
 							alt="JavaScript"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={github}
 							alt="Github"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={java}
 							alt="Java"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={bootstrap}
 							alt="Bootstrap"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={express}
 							alt="Express"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={flutter}
 							alt="Flutter"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={springboot}
 							alt="Spring Boot"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={android}
 							alt="Android"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={elastic}
 							alt="Elastic Search"
 						/>
 						<img
-							className="w-12 h-auto m-1 filter grayscale hover:filter-none cursor-pointer"
+							className="w-12 h-auto m-1 cursor-pointer"
 							src={redux}
 							alt="Redux"
 						/>

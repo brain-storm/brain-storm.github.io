@@ -12,11 +12,11 @@ function Work() {
 
 	return (
 		<section
-			id="experience"
+			id="work"
 			className="p-8 flex justify-center bg-gray-100"
 		>
 			<div className="max-w-5xl w-full flex flex-col items-center">
-				<h2 className="text-2xl uppercase font-bold mb-4">
+				<h2 className="text-2xl uppercase font-bold mb-4 text-teal-900">
 					What We Have Done
 				</h2>
 				<div className="w-full grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

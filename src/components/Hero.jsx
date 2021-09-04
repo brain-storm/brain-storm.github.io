@@ -7,7 +7,7 @@ function Hero() {
 			<div className="text-center">
 				<h1 className="text-6xl">
 					Hi, We are
-					<span className="font-bold text-teal-700"> Brainstorm</span>
+					<span className="font-bold text-teal-900"> Brainstorm</span>
 				</h1>
 				<p className="p-4 text-xl">Web developers &amp; Disrupturs</p>
 			</div>

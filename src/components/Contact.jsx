@@ -18,7 +18,7 @@ function Contact() {
 	return (
 		<section id="contact" className="p-4 flex justify-center">
 			<div className="max-w-5xl w-full flex flex-col items-center">
-				<div className=" flex gap-2 flex-col items-center mb-2">
+				<div className="text-teal-900 flex gap-2 flex-col items-center mb-3">
 					<FaRegPaperPlane className="text-5xl"/>
                     <p className="text-2xl uppercase">Get In Touch</p>
 				</div>

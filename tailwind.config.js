@@ -19,9 +19,6 @@ module.exports = {
     // }
   },
   variants: {
-    extend: {
-      filter: ['hover', 'focus'],
-    },
   },
   plugins: [],
 }

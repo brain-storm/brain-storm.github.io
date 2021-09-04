@@ -23,6 +23,22 @@ function Navbar() {
 		}
 	}
 
+	function scrollToSection(event) {
+		event.preventDefault();
+		if (event.target.getAttribute("href")) {
+			let bodyRect = document.body.getBoundingClientRect();
+			let elemRect = document
+				.querySelector(event.target.getAttribute("href"))
+				.getBoundingClientRect();
+			let offset = elemRect.top - bodyRect.top;
+			window.scrollTo(0, offset - 56);
+		}
+		console.log(window.innerWidth);
+		if (window.innerWidth < 768) {
+			document.getElementById("nav-elements").style.display = "none";
+		}
+	}
+
 	return (
 		<nav
 			ref={navRef}
@@ -30,12 +46,13 @@ function Navbar() {
 		>
 			<div className="p-2 flex justify-between">
 				<div className="font-bold">Brainstorm</div>
-				<FaBars
-					onClick={showNavbar}
-					className="inline-block md:hidden"
-				/>
+					<FaBars
+						onClick={showNavbar}
+						className="inline-block md:hidden text-3xl"
+					/>
 			</div>
 			<div
+				onClick={scrollToSection}
 				id="nav-elements"
 				className="hidden md:block flex flex-col items-center md:flex-row md:justify-evenly"
 			>
@@ -57,12 +74,12 @@ function Navbar() {
 				>
 					Work
 				</a>
-				<a
+				{/* <a
 					href="#blogs"
 					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
 				>
 					Blogs
-				</a>
+				</a> */}
 				<a
 					href="#contact"
 					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
