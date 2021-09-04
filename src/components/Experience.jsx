@@ -18,7 +18,7 @@ import redux from "../assets/skills/redux.png";
 function Experience() {
 	return (
 		<section id="experience" className="p-4 flex justify-center">
-			<div className="w-3/4 flex flex-col items-center">
+			<div className="max-w-5xl w-full flex flex-col items-center">
 				<div className="text-center">
 					<h2 className="text-2xl uppercase font-bold">Experience</h2>
 					<p className="m-auto py-2">

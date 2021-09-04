@@ -15,7 +15,7 @@ function Work() {
 			id="experience"
 			className="p-8 flex justify-center bg-gray-100"
 		>
-			<div className="w-3/4 flex flex-col items-center">
+			<div className="max-w-5xl w-full flex flex-col items-center">
 				<h2 className="text-2xl uppercase font-bold mb-4">
 					What We Have Done
 				</h2>

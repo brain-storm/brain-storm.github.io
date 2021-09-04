@@ -1,8 +1,44 @@
+import { useEffect, useRef } from "react";
+import { FaBars } from "react-icons/fa";
+
 function Navbar() {
+	const navRef = useRef(null);
+
+	useEffect(() => {
+		window.onscroll = function () {
+			if (window.scrollY > 0) {
+				navRef?.current.classList.add("shadow-lg");
+			} else {
+				navRef?.current.classList.remove("shadow-lg");
+			}
+		};
+	}, []);
+
+	function showNavbar(event) {
+		let navElementss = document.getElementById("nav-elements");
+		if (navElementss.style.display === "none") {
+			navElementss.style.display = "flex";
+		} else {
+			navElementss.style.display = "none";
+		}
+	}
+
 	return (
-		<nav className="px-14 py-2 flex justify-between uppercase">
-			<div className="p-2">Brainstorm</div>
-			<div className="flex justify-evenly">
+		<nav
+			ref={navRef}
+			className="w-full px-14 py-2 flex flex-col md:flex-row md:items-center md:justify-between uppercase bg-white z-10 fixed top-0"
+		>
+			<div className="p-2 flex justify-between">
+				<div className="font-bold">Brainstorm</div>
+				<FaBars
+					onClick={showNavbar}
+					className="inline-block md:hidden"
+				/>
+			</div>
+			<div
+				id="nav-elements"
+				className="hidden md:block flex flex-col items-center md:flex-row md:justify-evenly"
+			>
 				<a
 					href="#about"
 					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"

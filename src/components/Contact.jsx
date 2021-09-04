@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { FaRegPaperPlane } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 
 function Contact() {
@@ -15,11 +16,12 @@ function Contact() {
 	}, [state.succeeded]);
 
 	return (
-		<section id="contact" className="p-4 flex justify-center bg-gray-100">
-			<div className="w-3/4 flex flex-col items-center">
-				<h2 className="text-2xl uppercase font-bold mb-4">
-					Send Us Hello
-				</h2>
+		<section id="contact" className="p-4 flex justify-center">
+			<div className="max-w-5xl w-full flex flex-col items-center">
+				<div className=" flex gap-2 flex-col items-center mb-2">
+					<FaRegPaperPlane className="text-5xl"/>
+                    <p className="text-2xl uppercase">Get In Touch</p>
+				</div>
 				<form onSubmit={handleSubmit} className="w-full">
 					<label htmlFor="email">Email Address</label>
 					<br />
