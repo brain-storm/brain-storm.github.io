@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 function Navbar() {
 	const navRef = useRef(null);
@@ -44,12 +45,15 @@ function Navbar() {
 			ref={navRef}
 			className="w-full pl-3 pr-2 md:px-14 py-2 flex flex-col md:flex-row md:items-center justify-center md:justify-between uppercase bg-white z-10 fixed top-0"
 		>
-			<div className="p-2 flex justify-between">
-				<div className="font-bold">Brainstorm</div>
-					<FaBars
-						onClick={showNavbar}
-						className="inline-block md:hidden text-3xl"
-					/>
+			<div className="flex justify-between">
+				<div className="font-bold">
+					<img className="inline-block w-12 h-auto mr-1" src={logo} alt="Brainstorm Logo" />
+					<span>Brainstorm</span>
+				</div>
+				<FaBars
+					onClick={showNavbar}
+					className="inline-block md:hidden text-3xl"
+				/>
 			</div>
 			<div
 				onClick={scrollToSection}
