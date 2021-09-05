@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
@@ -21,4 +21,20 @@ html{
 .project-card:hover .project-name {
 	opacity: 1;
 	transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes moveUpAndDown {
+	from {
+		bottom: 1rem;
+	}
+	to {
+		bottom: 1.5rem;
+	}
+}
+
+.arrow-animation {
+	animation-name: moveUpAndDown;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }

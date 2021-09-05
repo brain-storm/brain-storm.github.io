@@ -18,10 +18,10 @@ function Navbar() {
 
 	function showNavbar(event) {
 		let navElementss = document.getElementById("nav-elements");
-		if (navElementss.style.display === "none") {
-			navElementss.style.display = "flex";
+		if (navElementss.classList.contains("hidden")) {
+			navElementss.classList.remove("hidden");
 		} else {
-			navElementss.style.display = "none";
+			navElementss.classList.add("hidden");
 		}
 	}
 
@@ -35,7 +35,6 @@ function Navbar() {
 			let offset = elemRect.top - bodyRect.top;
 			window.scrollTo(0, offset - 56);
 		}
-		console.log(window.innerWidth);
 		if (window.innerWidth < 768) {
 			document.getElementById("nav-elements").style.display = "none";
 		}
@@ -46,7 +45,7 @@ function Navbar() {
 			ref={navRef}
 			className="w-full pl-3 pr-2 md:px-14 py-2 flex flex-col md:flex-row md:items-center justify-center md:justify-between uppercase bg-white z-10 fixed top-0"
 		>
-			<div className="flex justify-between">
+			<div className="flex justify-between items-center">
 				<div className="font-bold">
 					<img
 						className="inline-block w-12 h-auto mr-1"

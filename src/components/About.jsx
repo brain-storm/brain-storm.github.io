@@ -4,7 +4,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function About() {
 	return (
-		<section id="about" className="px-4 py-8 flex justify-center bg-gray-100">
+		<section
+			id="about"
+			className="px-4 py-8 flex justify-center bg-gray-100"
+		>
 			<div className="max-w-5xl w-full text-center">
 				<h2 className="text-2xl uppercase font-bold text-teal-900">
 					A Little About Us
@@ -18,11 +21,11 @@ function About() {
 						return (
 							<div
 								style={{ minWidth: "14rem" }}
-								className="p-4 cursor-pointer rounded flex flex-col items-center bg-white shadow-md transition-all duration-500 linear hover:shadow-xl"
+								className="p-4 cursor-pointer rounded flex flex-col items-center bg-white shadow-md transition-all duration-450 linear hover:shadow-xl"
 							>
 								<img
-									className="w-12"
-									src={avatar}
+									className="w-12 rounded-full"
+									src={dev.avatar}
 									alt="Avatar"
 								/>
 								<p className="font-bold text-lg mt-2">

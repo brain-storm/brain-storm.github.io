@@ -11,10 +11,7 @@ function Work() {
 	}
 
 	return (
-		<section
-			id="work"
-			className="p-8 flex justify-center bg-gray-100"
-		>
+		<section id="work" className="p-8 flex justify-center bg-gray-100">
 			<div className="max-w-5xl w-full flex flex-col items-center">
 				<h2 className="text-2xl uppercase font-bold mb-4 text-teal-900">
 					What We Have Done
@@ -23,8 +20,14 @@ function Work() {
 					{projects.map((project) => {
 						return (
 							<div
+								style={{
+									backgroundImage: `url(${project.thumbnail})`,
+									backgroundPosition: "center",
+									backgroundRepeat: "no-repeat",
+									backgroundSize: "cover",
+								}}
 								onClick={() => handleProjectModalOpen(project)}
-								className="relative cursor-pointer project-card"
+								className="h-44 relative cursor-pointer project-card"
 							>
 								<div className="absolute inset-0 w-full h-full overlay"></div>
 								<div className="absolute w-auto top-2 left-2/4 opacity-0 search-icon">
@@ -43,11 +46,11 @@ function Work() {
 										</svg>
 									</div>
 								</div>
-								<img
-									className="w-full h-auto"
+								{/* <img
+									className="w-full h-auto max-h-44"
 									src={project.thumbnail}
 									alt={project.name}
-								/>
+								/> */}
 								<div className="uppercase bg-teal-600 text-white text-center font-semibold absolute p-1 w-full bottom-0 opacity-0 project-name">
 									{project.name}
 								</div>

@@ -1,3 +1,6 @@
+import gaurav from "../assets/gaurav.jfif"
+import abhinav from "../assets/abhinav.jfif"
+
 const description = 'Our passion towards building creative and beautiful ' +
     'websites and applications using new technologies persuaded us to ' +
     'come up here and help others to make this world a better and accesssible ' +
@@ -13,6 +16,7 @@ export const about = {
             email: 'gauravksh11@gmail.com',
             github: 'https://github.com/grvsharma1810',
             linkedin: 'https://www.linkedin.com/in/gaurav-kr-sharma/',
+            avatar: gaurav,
             qualifications: {
                 degree: 'B.E.',
                 area: 'Computer Science and Engineering',
@@ -27,6 +31,7 @@ export const about = {
             github: 'https://github.com/AVNV2201',
             linkedin: 'https://linkedin.com/in/abhinav-kumar-giri',
             resume: '',
+            avatar: abhinav,
             qualifications: [
                 {
                     degree: 'B.Tech',

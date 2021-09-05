@@ -13,11 +13,23 @@ export const ModalProvider = ({ children }) => {
 	const cancelButtonRef = useRef(null);
 
 	function handleLeft(event) {
-		setCurrentImageInd((currInd) => (currInd + 1) % project.images.length);
+		setCurrentImageInd((currInd) => {
+			if (currInd + 1 !== project.images.length) {
+				return currInd + 1;
+			} else {
+				return 0;
+			}
+		});
 	}
 
 	function handleRight(event) {
-		setCurrentImageInd((currInd) => (currInd - 1) % project.images.length);
+		setCurrentImageInd((currInd) => {
+			if (currInd - 1 !== -1) {
+				return currInd - 1;
+			} else {
+				return project.images.length - 1;
+			}
+		});
 	}
 
 	return (
@@ -79,26 +91,32 @@ export const ModalProvider = ({ children }) => {
 													}
 													alt={project?.name}
 												/>
-												<div
-													onClick={handleLeft}
-													style={{
-														transform:
-															"translateY(-50%)",
-													}}
-													className="absolute top-1/2 p-4 left-2 bg-gray-200 rounded opacity-50 cursor-pointer"
-												>
-													<FaArrowLeft />
-												</div>
-												<div
-													onClick={handleRight}
-													style={{
-														transform:
-															"translateY(-50%)",
-													}}
-													className="absolute top-1/2 p-4 right-2 bg-gray-200 rounded opacity-60 cursor-pointer"
-												>
-													<FaArrowRight />
-												</div>
+												{project?.images.length > 1 && (
+													<>
+														<div
+															onClick={handleLeft}
+															style={{
+																transform:
+																	"translateY(-50%)",
+															}}
+															className="absolute top-1/2 p-4 left-2 bg-gray-200 rounded opacity-70 cursor-pointer"
+														>
+															<FaArrowLeft />
+														</div>
+														<div
+															onClick={
+																handleRight
+															}
+															style={{
+																transform:
+																	"translateY(-50%)",
+															}}
+															className="absolute top-1/2 p-4 right-2 bg-gray-200 rounded opacity-70 cursor-pointer"
+														>
+															<FaArrowRight />
+														</div>
+													</>
+												)}
 											</div>
 
 											<div className="mt-4">
@@ -106,28 +124,40 @@ export const ModalProvider = ({ children }) => {
 													{project?.description}
 												</p>
 											</div>
-											<div className="mt-4 text-gray-500">
-												<a
-													className="mr-1 px-3 py-2 bg-teal-700 hover:bg-teal-900 text-white text-xl rounded"
-													href={project?.liveUrl}
-													target="_blank"
-													rel="noreferrer"
-												>
-													Visit Website
-												</a>
-												<a
-													className="ml-1 px-3 py-2 bg-teal-700 hover:bg-teal-900 text-white text-xl rounded"
-													href={project?.repoUrl}
-													target="_blank"
-													rel="noreferrer"
-												>
-													Go to Repository
-												</a>
-											</div>
 										</div>
 									</div>
 								</div>
 								<div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+									{project?.liveUrl && (
+										<a
+											className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+											href={project?.liveUrl}
+											target="_blank"
+											rel="noreferrer"
+										>
+											Visit Website
+										</a>
+									)}
+									{project?.repoUrl && (
+										<a
+											className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+											href={project?.repoUrl}
+											target="_blank"
+											rel="noreferrer"
+										>
+											Go to Repository
+										</a>
+									)}
+									{project?.apk && (
+										<a
+											className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+											href={project?.apk}
+											target="_blank"
+											rel="noreferrer"
+										>
+											Download APK
+										</a>
+									)}
 									<button
 										type="button"
 										className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
