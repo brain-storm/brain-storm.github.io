@@ -36,7 +36,7 @@ function Navbar() {
 			window.scrollTo(0, offset - 56);
 		}
 		if (window.innerWidth < 768) {
-			document.getElementById("nav-elements").style.display = "none";
+			document.getElementById("nav-elements").classList.add("hidden");
 		}
 	}
 
