@@ -1,7 +1,7 @@
 const description = 'Our passion towards building creative and beautiful ' +
- 'websites and applications using new technologies persuaded us to ' +
- 'come up here and help others to make this world a better and accesssible ' +
- 'place to live.'
+    'websites and applications using new technologies persuaded us to ' +
+    'come up here and help others to make this world a better and accesssible ' +
+    'place to live.'
 
 export const about = {
     description: description,
@@ -10,6 +10,9 @@ export const about = {
             name: 'Gaurav Sharma',
             gender: 'Male',
             age: '21',
+            email: 'gauravksh11@gmail.com',
+            github: 'https://github.com/grvsharma1810',
+            linkedin: 'https://www.linkedin.com/in/gaurav-kr-sharma/',
             qualifications: {
                 degree: 'B.E.',
                 area: 'Computer Science and Engineering',

@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import { ModalProvider } from './assets/providers/ModalProviders';
+import { ModalProvider } from './providers/ModalProviders';
 
 ReactDOM.render(
   <React.StrictMode>
     <ModalProvider>
-      <App />
+    <App />
     </ModalProvider>
   </React.StrictMode>,
   document.getElementById('root')

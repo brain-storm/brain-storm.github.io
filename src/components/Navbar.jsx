@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import navbar from "../constants/navbar";
 
 function Navbar() {
 	const navRef = useRef(null);
@@ -47,7 +48,11 @@ function Navbar() {
 		>
 			<div className="flex justify-between">
 				<div className="font-bold">
-					<img className="inline-block w-12 h-auto mr-1" src={logo} alt="Brainstorm Logo" />
+					<img
+						className="inline-block w-12 h-auto mr-1"
+						src={logo}
+						alt="Brainstorm Logo"
+					/>
 					<span>Brainstorm</span>
 				</div>
 				<FaBars
@@ -60,36 +65,16 @@ function Navbar() {
 				id="nav-elements"
 				className="hidden md:block flex flex-col items-center md:flex-row md:justify-evenly"
 			>
-				<a
-					href="#about"
-					className="mx-2 py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
-				>
-					About
-				</a>
-				<a
-					href="#experience"
-					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
-				>
-					Experience
-				</a>
-				<a
-					href="#work"
-					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
-				>
-					Work
-				</a>
-				{/* <a
-					href="#blogs"
-					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
-				>
-					Blogs
-				</a> */}
-				<a
-					href="#contact"
-					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
-				>
-					Contact
-				</a>
+				{navbar.map((navElem) => {
+					return (
+						<a
+							href={navElem.href}
+							className="mx-2 py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
+						>
+							{navElem.value}
+						</a>
+					);
+				})}
 			</div>
 		</nav>
 	);

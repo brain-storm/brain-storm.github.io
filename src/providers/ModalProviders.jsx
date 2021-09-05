@@ -71,32 +71,22 @@ export const ModalProvider = ({ children }) => {
 												</p>
 											</div>
 											<div className="mt-4 text-gray-500">
-												<p>
-													<span className="font-semibold">
-														Live URL :{" "}
-													</span>
-													<a
-														className="hover:underline"
-														href={project?.liveUrl}
-														target="_blank"
-														rel="noreferrer"
-													>
-														{project?.liveUrl}
-													</a>
-												</p>
-												<p>
-													<span className="font-semibold">
-														Repository URL :{" "}
-													</span>
-													<a
-														className="hover:underline"
-														href={project?.repoUrl}
-														target="_blank"
-														rel="noreferrer"
-													>
-														{project?.repoUrl}
-													</a>
-												</p>
+												<a
+													className="mr-1 px-3 py-2 bg-teal-700 hover:bg-teal-900 text-white text-xl rounded"
+													href={project?.liveUrl}
+													target="_blank"
+													rel="noreferrer"
+												>
+													Visit Website
+												</a>
+												<a
+													className="ml-1 px-3 py-2 bg-teal-700 hover:bg-teal-900 text-white text-xl rounded"
+													href={project?.repoUrl}
+													target="_blank"
+													rel="noreferrer"
+												>
+													Go to Repository
+												</a>
 											</div>
 										</div>
 									</div>

@@ -1,4 +1,4 @@
-import { useModal } from "../assets/providers/ModalProviders";
+import { useModal } from "../providers/ModalProviders";
 import { projects } from "../constants/projects";
 import "../index.css";
 
@@ -46,7 +46,7 @@ function Work() {
 								<img
 									className="w-full h-auto"
 									src={project.thumbnail}
-									alt="skdfjh"
+									alt={project.name}
 								/>
 								<div className="uppercase bg-teal-600 text-white text-center font-semibold absolute p-1 w-full bottom-0 opacity-0 project-name">
 									{project.name}
