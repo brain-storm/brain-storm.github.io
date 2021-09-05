@@ -25,10 +25,10 @@ html {
 
 @keyframes moveUpAndDown {
 	from {
-		bottom: 1rem;
+		bottom: 3rem;
 	}
 	to {
-		bottom: 1.5rem;
+		bottom: 3.5rem;
 	}
 }
 

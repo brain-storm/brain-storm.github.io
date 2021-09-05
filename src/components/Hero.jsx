@@ -30,7 +30,7 @@ function Hero() {
 				</h1>
 				<p className="p-1 text-xl">Web &amp; Mobile App Developers</p>
 			</div>
-			<div className="arrow-animation sm:hidden absolute bottom-4 flex justify-center w-full">
+			<div className="arrow-animation sm:hidden absolute bottom-12 flex justify-center w-full">
 				<FaAngleDown
 					onClick={moveToAboutSection}
 					className="cursor-pointer text-6xl text-white"
