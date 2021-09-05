@@ -52,7 +52,7 @@ function Navbar() {
 				</div>
 				<FaBars
 					onClick={showNavbar}
-					className="inline-block md:hidden text-3xl"
+					className="inline-block md:hidden text-3xl cursor-pointer"
 				/>
 			</div>
 			<div
@@ -62,7 +62,7 @@ function Navbar() {
 			>
 				<a
 					href="#about"
-					className="py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
+					className="mx-2 py-2 px-4 hover:bg-teal-700 hover:text-white focus:bg-teal-700 focus:text-white cursor-pointer rounded"
 				>
 					About
 				</a>

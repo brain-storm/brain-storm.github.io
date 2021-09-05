@@ -1,15 +1,15 @@
 const description = 'Our passion towards building creative and beautiful ' +
  'websites and applications using new technologies persuaded us to ' +
  'come up here and help others to make this world a better and accesssible ' +
- 'place to live. '
+ 'place to live.'
 
 export const about = {
     description: description,
     devs: [
         {
             name: 'Gaurav Sharma',
-            gender: 'Transgender',
-            age: '22',
+            gender: 'Male',
+            age: '21',
             qualifications: {
                 degree: 'B.E.',
                 area: 'Computer Science and Engineering',

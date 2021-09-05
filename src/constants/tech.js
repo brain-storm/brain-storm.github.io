@@ -1,4 +1,4 @@
-module.exports = {
+const tech = {
     nodejs: {
         name: 'Node.js',
         usage: 'backend',
@@ -41,3 +41,5 @@ module.exports = {
     },
     
 }
+
+export default tech;

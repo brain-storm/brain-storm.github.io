@@ -2,14 +2,14 @@ import "../index.css";
 
 function Hero() {
 	return (
-		// <section className="bg-hero-image bg-fixed bg-center bg-no-repeat bg-cover">
-		<section className="flex h-screen justify-center items-center">
-			<div className="text-center">
-				<h1 className="text-6xl">
-					Hi, We are
-					<span className="font-bold text-teal-900"> Brainstorm</span>
+		<section className="relative bg-hero-image bg-center bg-no-repeat bg-cover h-screen">
+			{/* // <section className="flex h-screen justify-center items-center"> */}
+			<div className="absolute top-28 left-6" style={{lineHeight:"1.25", borderRadius:"50%",backgroundColor:"white", boxShadow:"0 0 50px 50px white"}}>
+				<h1 style={{fontSize:"calc(60px + 1.75vw)"}}>
+					<span>Hi, We are</span> <br />
+					<span className="font-bold text-teal-900">Brainstorm</span>
 				</h1>
-				<p className="p-4 text-xl">Web developers &amp; Disrupturs</p>
+				<p className="p-1 text-xl">Web developers &amp; Disrupturs</p>
 			</div>
 		</section>
 		// </section>

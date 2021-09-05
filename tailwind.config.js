@@ -11,12 +11,12 @@ module.exports = {
       gray: colors.trueGray,
       teal: colors.teal,
       white: "#fff"
+    },
+    extend: {
+      backgroundImage: theme => ({
+        'hero-image': "url('/src/assets/hero-background.png')",
+      })
     }
-    // extend: {
-    //   backgroundImage: theme => ({
-    //     'hero-image': "url('/src/assets/hero-background.jpg')",
-    //   })
-    // }
   },
   variants: {
   },

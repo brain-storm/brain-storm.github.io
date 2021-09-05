@@ -7,7 +7,7 @@ function About() {
 				<h2 className="text-2xl uppercase font-bold text-teal-900">
 					A Little About Us
 				</h2>
-				<p className="m-auto py-2">{about}</p>
+				<p className="m-auto py-2">{about.description}</p>
 			</div>
 		</section>
 	);

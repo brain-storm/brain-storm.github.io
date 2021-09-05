@@ -1,6 +1,5 @@
 
-
-module.exports = {
+const language = {
     java: {
         name: 'Java',
         image: ''
@@ -42,3 +41,5 @@ module.exports = {
         image: ''
     }
 }
+
+export default language
