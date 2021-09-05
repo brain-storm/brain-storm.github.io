@@ -1,16 +1,25 @@
 import { createContext, useState, useContext } from "react";
 import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationIcon } from "@heroicons/react/outline";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ModalContext = createContext({});
 
 export const ModalProvider = ({ children }) => {
 	const [open, setOpen] = useState(false);
 	const [project, setProject] = useState(null);
+	const [currentImageInd, setCurrentImageInd] = useState(0);
 
 	const cancelButtonRef = useRef(null);
-	console.log(project);
+
+	function handleLeft(event) {
+		setCurrentImageInd((currInd) => (currInd + 1) % project.images.length);
+	}
+
+	function handleRight(event) {
+		setCurrentImageInd((currInd) => (currInd - 1) % project.images.length);
+	}
+
 	return (
 		<ModalContext.Provider value={{ open, setOpen, setProject }}>
 			{children}
@@ -60,11 +69,38 @@ export const ModalProvider = ({ children }) => {
 											>
 												{project?.name}
 											</Dialog.Title>
-											<img
-												className="w-full h-auto"
-												src={project?.thumbnail}
-												alt={project?.name}
-											/>
+											<div className="relative h-auto">
+												<img
+													className="w-full h-auto"
+													src={
+														project?.images[
+															currentImageInd
+														]
+													}
+													alt={project?.name}
+												/>
+												<div
+													onClick={handleLeft}
+													style={{
+														transform:
+															"translateY(-50%)",
+													}}
+													className="absolute top-1/2 p-4 left-2 bg-gray-200 rounded opacity-50 cursor-pointer"
+												>
+													<FaArrowLeft />
+												</div>
+												<div
+													onClick={handleRight}
+													style={{
+														transform:
+															"translateY(-50%)",
+													}}
+													className="absolute top-1/2 p-4 right-2 bg-gray-200 rounded opacity-60 cursor-pointer"
+												>
+													<FaArrowRight />
+												</div>
+											</div>
+
 											<div className="mt-4">
 												<p className="text-md text-gray-500">
 													{project?.description}

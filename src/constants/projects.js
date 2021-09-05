@@ -11,6 +11,7 @@ export const projects = [
     {
         name: 'Rapid UI',
         thumbnail: rapidUI,
+        images:[],
         description: 'Rapid UI is a CSS Component library developed during the course of neoG camp. With Rapid UI you can develop responsive and polished web apps on the go.',
         techUsed: ['HTML5', 'CSS', 'JavaScript', 'React'],
         liveUrl: 'https://rapid-ui.netlify.app/',
@@ -19,6 +20,7 @@ export const projects = [
     {
         name: 'The Clan',
         thumbnail: theClan,
+        images:[],
         description: 'This is a social media app which has features like dark mode, auth persistence, notifications, paginated feed and a lot more.',
         techUsed: ['Node', 'MongoDB', 'Express', 'React', 'Redux-Toolkit'],
         liveUrl: 'https://the-clan.netlify.app/',
@@ -27,6 +29,7 @@ export const projects = [
     {
         name: 'Digihouse',
         thumbnail: digihouse,
+        images:[],
         description: 'A Clubhouse appllication with text as medium of exchange. Anybody can create room here on any topic and discuss with people around the world. See demo here - https://www.youtube.com/watch?v=PmIFEFUIYBA',
         techUsed: ['Firebase', 'React', 'Material UI'],
         liveUrl: 'https://digi-house.netlify.app/',
@@ -35,6 +38,7 @@ export const projects = [
     {
         name: 'Rapify',
         thumbnail: rapify,
+        images:[],
         description: 'This is a video library which contains curated collection of hip-hop music. It has features like watch later, add to playlist, sign-in with google, email and a lot more.',
         techUsed: ['Node', 'MongoDB', 'Express', 'React'],
         liveUrl: 'http://rapify.netlify.app/',
@@ -43,6 +47,7 @@ export const projects = [
     {
         name: 'Shop Circuit',
         thumbnail: shopCircuit,
+        images:[],
         description: 'This is an ecommerce app which contains music related equipments. It is available is 3 languages - English, Hindi, Spanish.',
         techUsed: ['Node', 'MongoDB', 'Express', 'React'],
         liveUrl: 'https://shop-circuit.netlify.app/',
@@ -51,6 +56,7 @@ export const projects = [
     {
         name: 'Geeks Trivia',
         thumbnail: geeksTrivia,
+        images:[],
         description: 'This is a quiz app which contains set of quizes based on hip-hop',
         techUsed: ['Node', 'MongoDB', 'Express', 'React', 'Material UI'],
         liveUrl: 'https://geekstrivia.netlify.app/',
@@ -59,7 +65,8 @@ export const projects = [
     // {
     //     name: 'News AI',
     //     thumbnail: theClan,
-    //     description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
+    // images:[],     
+    // description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
     //     techUsed: ['Android', 'Reinforcement Learning', 'SQLite DB'],
     //     languages: [languages.java],
     //     liveUrl: 'https://the-clan.netlify.app/',
@@ -68,7 +75,8 @@ export const projects = [
     // {
     //     name: 'The College Post',
     //     thumbnail: theClan,
-    //     description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
+    // images:[],     
+    // description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
     //     techUsed: [tech.nodejs, tech.mongodb, tech.flutter, tech.express],
     //     languages: [languages.javaScript, languages.dart],
     //     liveUrl: 'https://the-clan.netlify.app/',
