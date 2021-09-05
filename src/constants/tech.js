@@ -39,7 +39,26 @@ const tech = {
         usage: 'server',
         image: ''
     },
-    
+    android: {
+        name: 'Android',
+        usage: 'Frontend',
+        image: ''
+    },
+    reinforcement: {
+        name: 'Reinforcement Learning',
+        usage: 'AI',
+        image: ''
+    },
+    sqlite: {
+        name: 'SQLiteDB',
+        usage: 'DB',
+        image: ''
+    },
+    googleMaps: {
+        name: 'Google Maps API',
+        usage: 'API',
+        image: ''
+    },
 }
 
 export default tech;

@@ -62,24 +62,50 @@ export const projects = [
         liveUrl: 'https://geekstrivia.netlify.app/',
         repoUrl: 'https://github.com/grvsharma1810/geekstrivia'
     },
-    // {
-    //     name: 'News AI',
-    //     thumbnail: theClan,
-    // images:[],     
-    // description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
-    //     techUsed: ['Android', 'Reinforcement Learning', 'SQLite DB'],
-    //     languages: [languages.java],
-    //     liveUrl: 'https://the-clan.netlify.app/',
-    //     repoUrl: 'https://github.com/grvsharma1810/the-clan'
-    // },
-    // {
-    //     name: 'The College Post',
-    //     thumbnail: theClan,
-    // images:[],     
-    // description: 'This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description This is a dummy description',
-    //     techUsed: [tech.nodejs, tech.mongodb, tech.flutter, tech.express],
-    //     languages: [languages.javaScript, languages.dart],
-    //     liveUrl: 'https://the-clan.netlify.app/',
-    //     repoUrl: 'https://github.com/grvsharma1810/the-clan'
-    // },
+    {
+        name: 'News AI',
+        thumbnail: theClan,
+        images:[],  
+        description: "An Android app that brigs news articles personalized for each user without sending any user data to server using Machine Learning algo",
+        features: [
+            'Feed: Get user personalised news articles',
+            'Privacy: No data sent to server, no user data stored',
+            'Weather: Get weather reports of any city',
+            'Notes: Make notes related to articles or anything of your choice',
+            'Read Later: Save articles for future readings',
+            'Share: Share news articles with others',
+            'Category-wise: Get category-wise news articles',
+            'Country-wise: Get news articles of specific countries' 
+        ],
+        techUsed: [tech.android, tech.reinforcement, tech.sqlite],
+        languages: [languages.java],
+        liveUrl: '',
+        apk: '',
+        repoUrl: 'https://github.com/AVNV2201/News-Feed-App-Using-In-app-ML-',
+    },
+    {
+        name: 'The College Post',
+        thumbnail: theClan,
+        images:[],
+        description: 'A Flutter app with Node.js backend and MongoDB, developed for college students to share posts, ask problems and answer others problems with the privacy of college only. No hesitation, supportive community',
+        features: [
+            'Post articles, Ask a Problem, Answer a problem',
+            'JWT authentication: Sign in / sign up using your college credentials with independent authentication of our own server',
+            'Feed: Get trending posts, latest posts and unanswered problems',
+            'Branchwise Feed: Get feed of a particular branch/stream',
+            'Theme: Dark mode or Light Mode, its your choice',
+            'Actions: Like a post , see its views, see likers and viewwes',
+            'Search: Search for a particular topic easily',
+            'Profile: See your profile and related data',
+            'Stats: See your statistics of likes and views',
+            'Search User: Search for a particular user and see their profile details',
+            'Cheatsheet: Get a Markdown cheatsheet for effective writing',
+            'Settings: Get several settings features including fontsize, clear search history,etc.'
+        ],
+        techUsed: [tech.nodejs, tech.mongodb, tech.flutter, tech.express],
+        languages: [languages.javaScript, languages.dart],
+        liveUrl: '',
+        apk: '',
+        repoUrl: 'https://github.com/the-brain-storm/mnnit-forum-flutter-app'
+    },
 ]
